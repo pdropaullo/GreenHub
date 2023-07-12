@@ -7,6 +7,11 @@
     font-family: sans-serif;
 }
 
+:root {
+    --green: #419E45;
+    --light: #DAEFDB;
+}
+
 header {
     width: 100%;
     height: 150px;
@@ -25,6 +30,13 @@ header {
 .icons>a>i {
     font-size: 32px;
     color: black;
+    transition: .5s;
+}
+
+.icons>a>i:hover {
+    cursor: pointer;
+    opacity: .8;
+    transform: scale(1.2);
 }
 
 .logo>img {
@@ -41,31 +53,188 @@ header {
     width: 100%;
     height: 50px;
     font-size: 32px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
-nav{
-    background-color: #419E45;
+nav {
+    background-color: var(--green);
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
 }
 
-.menus{
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.menus {
     display: flex;
     width: 60%;
     justify-content: space-around;
     align-items: center;
 }
 
-.menus>a{
+.menu,
+.barra {
     font-size: 32px;
     color: white;
     font-weight: bold;
-    border-right: 2px solid white;
     padding-right: 35px;
+    transition: .5s;
 }
 
-#consultoria{
-    border: none;
+.menu:hover {
+    cursor: pointer;
+    color: yellow;
+    transform: scale(1.2);
+}
+
+.main1 {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "principal principal"
+        "segundo1 segundo2";
+    padding: 0 100px;
+}
+
+.main2 {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-areas: "terceiro terceiro terceiro"
+        "quarto1 quarto2 quarto3";
+    padding: 0 100px;
+}
+
+.principal {
+    grid-area: principal;
+    background-image: url(/img/sus_01.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.segundo1 {
+    grid-area: segundo1;
+    background-image: url(/img/sus_02.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.segundo2 {
+    grid-area: segundo2;
+    background-color: var(--light);
+}
+
+.terceiro {
+    grid-area: terceiro;
+    background-image: url(/img/sus_03.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.quarto1 {
+    grid-area: quarto1;
+    background-color: var(--light);
+}
+
+.quarto2 {
+    grid-area: quarto2;
+    background-image: url(/img/sus_04.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.quarto3 {
+    grid-area: quarto3;
+}
+
+.quarto3>img {
+    width: 550px;
+    display: flex;
+    margin: 60px auto;
+}
+
+.conteudo_principal {
+    padding: 200px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 24px;
+}
+
+.conteudo {
+    padding: 50px;
+    height: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.geral {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo2>a>img {
+    width: 250px;
+}
+
+.contato,
+.infos {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+}
+
+.icons_footer>a>i {
+    color: white;
+    font-size: 32px;
+    padding-top: 10px;
+    padding-right: 10px;
+    transition: .5s;
+}
+
+.icons_footer>a>i:hover {
+    color: yellow;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid white;
+    width: 80%;
+    margin: 0 auto;
 }
