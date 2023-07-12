@@ -115,16 +115,10 @@ nav {
 
 .principal {
     grid-area: principal;
-    background-image: url(/img/sus_01.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .segundo1 {
     grid-area: segundo1;
-    background-image: url(/img/sus_02.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .segundo2 {
@@ -134,9 +128,6 @@ nav {
 
 .terceiro {
     grid-area: terceiro;
-    background-image: url(/img/sus_03.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .quarto1 {
@@ -146,9 +137,6 @@ nav {
 
 .quarto2 {
     grid-area: quarto2;
-    background-image: url(/img/sus_04.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .quarto3 {
@@ -172,6 +160,30 @@ nav {
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
     font-size: 24px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.principal>img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.segundo1>img{
+    width: 100%;
+    height: 100%;
+}
+
+.terceiro>img{
+    width: 100%;
+    height: 100%;
+}
+
+.quarto2>img{
+    width: 100%;
+    height: 100%;
 }
 
 .conteudo {
