@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+
+.icons>a>i {
+    font-size: 32px;
+    color: black;
+}
+
+.logo>img {
+    height: 150px;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.busca>input {
+    width: 100%;
+    height: 50px;
+    font-size: 32px;
+}
+
+nav{
+    background-color: #419E45;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.menus{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menus>a{
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+    padding-right: 35px;
+}
+
+#consultoria{
+    border: none;
+}
