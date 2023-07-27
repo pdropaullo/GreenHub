@@ -7,4 +7,4 @@ A equipe é composta pelos estudantes da 4ª Fase do Curso Superior de Tecnologi
 [Pedro Paulo de Abreu](https://github.com/pdropaullo)  
 [Thiago Ruan Costa](https://github.com/Thiagor34)
 
-[Link para Acesso](https://pdropaullo.github.io/GreenHub/)
+[Link de Acesso](https://pdropaullo.github.io/GreenHub/)
